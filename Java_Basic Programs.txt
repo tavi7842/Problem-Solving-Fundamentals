@@ -1,0 +1,60 @@
+Write a java program to find total and average of 3 subjects.
+
+class Total_Avg {
+
+  public static void main(String args[]) {
+
+    int sub1 = 90, sub2 = 78, sub3 = 98;
+    int total, avg;
+
+    total = sub1 + sub2 + sub3;
+    avg = total / 3;
+    System.out.println("Total marks : " + total);
+    System.out.println("Average marks : " + avg);
+
+  }
+}
+
+Write a welcome program in java
+
+class Welcome {
+
+  public static void main(String args[]){
+
+    System.out.println("Welcome");
+  }
+}  
+
+Write a program to find shopping amount and 3 shopping of employee salary and find out total shopping amount and total shopping percentage
+
+class shopping {
+
+  public static void main(String args[]) {
+
+  int employee_salary=250000,shopping_1=42000,shopping2=54000,shopping3=37000;
+  int total,percentage;
+
+  total=shopping_1+shopping2+shopping3;
+  percentage=(total*100)/employee_salary;
+  System.out.println("Total_Shopping_amount :"+total);
+  System.out.println("Total_Spend_percentage :"+percentage);
+
+  }
+}
+
+Write a program to caluclate the employee gross salary based reading employee basic salary and adding 67% of hra and 89% of da
+
+class salary {
+
+  public static void main(String args[]) {
+
+  float employee_basic_salary=70000,gross,hra,da;
+
+  hra=employee_basic_salary*67/100;
+  da=employee_basic_salary*89/100;
+  gross=employee_basic_salary+hra+da;
+
+  System.out.println("Gross_Salary : " +gross);
+
+  }
+}
