@@ -1,0 +1,90 @@
+1.Write a Pseudo code to print "bitLabs" message 10 times.
+
+Begin
+Numeric I, String Bitlabs;
+Accept I
+I=1;
+if(I<=10) {
+Display "Bitlabs";
+I=I++;
+}
+else {
+stop
+}
+End
+
+
+2) Write a Pseudocode to print 1-10 numbers
+
+Begin
+Numeric I
+Initialize I=1;
+Accept I ;
+If (I <= 10) {
+Display I;
+I++;
+}
+Else{
+}
+end
+
+3.Write a Pseudocode to print 10-1 numbers
+
+Begin
+Numeric i;
+Initialize i=10;
+If(i<=10) {
+Display I;
+I--;
+}
+Else {
+}
+End
+
+4.Write a Pseudocode to print even numbers between 1-10 numbers
+
+Begin
+Numeric I;
+Initialize I=1;
+If(I<=10) {
+If(I%2==0) {
+Display I;
+}
+Else {
+I++;
+}
+}
+
+5.Write a Pseudocode to print odd numbers between 1-10 numbers
+
+Begin
+Numeric I;
+Initialize I=1;
+If(I<=10) {
+If(I%2!=0) {
+Display I;
+}
+Else {
+I++;
+}
+}
+
+6.Write a Pseudocode start and stop values and print between values.
+
+Begin
+Numeric start, stop;
+Accept start, stop values;
+If(start<=stop) {
+Display “start “;
+I++;
+}
+Elseif (start>stop) {
+Display “start”
+I--;
+}
+Else {
+Display "start and stop values are same";
+}
+End
+
+
