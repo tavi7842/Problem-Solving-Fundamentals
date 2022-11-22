@@ -1,0 +1,111 @@
+1.WAP to print given number is even or odd
+  
+  import java.util.Scanner;
+
+class even_or_odd {
+
+  public static void main(String args[]){
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter number to check even or odd");
+    int num = s.nextInt();
+
+    if(num%2==0){
+      System.out.println("Print number is even");
+    }
+    else {
+      System.out.println("Print number is odd");
+    }
+  }
+}
+
+  
+
+2.WAP to print given number is +ve or -ve or zero
+
+  import java.util.Scanner;
+
+class Postive_or_negative {
+  public static void main(String args[]){
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter the number");
+    int i = s.nextInt();
+    if(i>0){
+      System.out.println(i+ "is a positive number");
+    } else if(i<0) {
+      System.out.println(i+ "is a negative number"); 
+    } else {
+      System.out.println(i+ "is zero");
+    }
+  }
+}
+
+3.WAP to print gross salary for given basic salary
+  where if salary<=10000
+  hra = 80% da=76%
+  where if salary > 10000 and salary <=20000
+  hra = 83% da = 78%
+  where if salary >20000
+  hra = 89% da=86%
+
+import java.util.Scanner;
+class salary {
+
+  public static void main(String args[]) {
+  Scanner s = new Scanner(System.in);
+    System.out.println("Enter the basic salary of employee");
+    int employee_basic_salary = s.nextInt();
+    int hra,da,gross;
+    if(employee_basic_salary<=10000) {
+    hra=(employee_basic_salary*80)/100;
+     da=employee_basic_salary*76/100;
+     gross=employee_basic_salary+hra+da;
+
+  System.out.println("Gross_Salary : " +gross);  
+    } else if (employee_basic_salary>10000 && employee_basic_salary<=20000) { 
+       hra=(employee_basic_salary*83)/100;
+       da=employee_basic_salary*78/100;
+       gross=employee_basic_salary+hra+da;
+
+  System.out.println("Gross_Salary : " +gross);  
+    }
+  else{
+    hra=(employee_basic_salary*89)/100;
+     da=employee_basic_salary*86/100;
+    gross=employee_basic_salary+hra+da;
+
+  System.out.println("Gross_Salary : " +gross);
+  }
+  }
+}
+
+4.WAP to print the day for a given number
+  
+  import java.util.Scanner;
+
+  class Week_day {
+
+    public static void main(String args[]){
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter number to check week day"); 
+     int num = s.nextInt();
+      if(num==1){
+        System.out.println(num+  "It is Sunday");
+      } else if(num==2){
+        System.out.println(num+  "It is Monday");  
+        } else if (num==3){
+        System.out.println(num+  "It is Tuesday");
+        } else if (num==4){
+        System.out.println(num+  "It is Wednesday");
+        } else if (num==5){
+        System.out.println(num+  "It is Thursday");
+        }else if (num==6){
+        System.out.println(num+  "It is Friday");
+        }else if (num==7){
+        System.out.println(num+  "It is Saturday");
+        } else {
+        System.out.println(num+  "It is Invalid");
+        }
+    }
+  }
+
+
