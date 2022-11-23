@@ -1,0 +1,353 @@
+1. WAP to accept marks and print pass or fail.
+
+Answer:
+
+import java.util.Scanner;
+  class Pass_or_fail {
+    public static void main(String args[]){
+      Scanner s = new Scanner(System.in);
+      int i = 0;
+       System.out.println("Enter the marks of user");
+       i = s.nextInt();
+      if (i>=50){
+        System.out.println("the user is passed");
+      } else {
+          System.out.println("the user is failed"); 
+      }
+    }
+  }
+
+
+
+2. WAP to accept age and print he/she is eligible for voting or not?
+
+Answer:
+
+import java.util.Scanner;
+  class Vote_eligible {
+    public static void main(String args[]) {
+      Scanner s = new Scanner(System.in);
+      int i =0;
+      System.out.println("Enter the age of user");
+      i = s.nextInt();
+      if (i>=18) {
+        System.out.println("user is eligible");
+      } else {
+        System.out.println("user is not eligible");
+      }
+    }
+  }
+
+
+ 
+3. WAP to accept number and check it is even or odd
+
+Answer:
+
+import java.util.Scanner;
+
+class even_or_odd {
+
+  public static void main(String args[]){
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter number to check even or odd");
+    int num = s.nextInt();
+
+    if(num%2==0){
+      System.out.println("Print number is even");
+    }
+    else {
+      System.out.println("Print number is odd");
+    }
+  }
+}
+
+4. WAP to accept two numbers and print big number or both are same.
+
+Answer:
+
+import java.util.Scanner;
+  class Big_number {
+    public static void main(String args[]){
+      Scanner s = new Scanner(System.in);
+      int i = 0,j=0;
+      System.out.println("Enter the 2 numbers i & j");
+      i = s.nextInt();
+      j = s.nextInt();
+      if (i>j) {
+        System.out.println(i+ "is big");
+      } 
+        else if (j>i) {
+          System.out.println(j+ "is big");   
+        } else {
+          System.out.println("both are same");
+       }
+    }
+ }
+
+5. WAP to read number and check it is even or odd or zero
+
+Answer:
+
+import java.util.Scanner;
+
+class Even_or_od1 {
+
+  public static void main(String args[]) {
+
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter number to check it is even or odd or zero");
+    int num = s.nextInt(); // 0
+    if (num == 0) {
+      System.out.println("zero");
+    } else if (num % 2 == 0) {
+      System.out.println("Even number");
+    } else {
+      System.out.println("Odd number");
+    }
+
+  }
+}
+
+6. WAP to read number and check it is +ve or -ve or zero.
+
+Answer:
+
+import java.util.Scanner;
+
+class Postive_or_negative {
+  public static void main(String args[]){
+    Scanner s = new Scanner(System.in);
+    int i = 0;
+    System.out.println("Enter the number");
+     i = s.nextInt();
+    if(i>0){
+      System.out.println(i+ "is a positive number");
+    } else if(i<0) {
+      System.out.println(i+ "is a negative number"); 
+    } else {
+      System.out.println(i+ "is zero");
+    }
+  }
+}
+
+
+7. WAP to accept week number and print week day
+
+     Enter week number: 
+                 1-  Sunday
+       
+     1- Sunday
+     2- Monday
+     3- Tuesday
+     4- Wednesday
+     5- Thursday
+     6- Friday
+     7- Saturday
+above 7 or less than 1- print error message ("invalid week number")
+
+Answer:
+
+import java.util.Scanner;
+
+  class Week_day {
+
+    public static void main(String args[]){
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter number to check week day"); 
+     int num = s.nextInt();
+      if(num==1){
+        System.out.println(num+  "It is Sunday");
+      } else if(num==2){
+        System.out.println(num+  "It is Monday");  
+        } else if (num==3){
+        System.out.println(num+  "It is Tuesday");
+        } else if (num==4){
+        System.out.println(num+  "It is Wednesday");
+        } else if (num==5){
+        System.out.println(num+  "It is Thursday");
+        }else if (num==6){
+        System.out.println(num+  "It is Friday");
+        }else if (num==7){
+        System.out.println(num+  "It is Saturday");
+        } else {
+        System.out.println(num+  "It is Invalid");
+        }
+    }
+  }
+
+8. WAP to read basic salary from employee and find gross salary.
+
+       gs=basic+hra+da
+        
+       if basic<=10000    hra is 67% on basic and Da is 78% on basic
+        if basic between 10000 -20000 hra is 70% on basic and da is 80% on basic
+       if basic is more than 20000 hra is 75% and da is 85% on basic.
+Answer:
+
+import java.util.Scanner;
+class salary {
+
+  public static void main(String args[]) {
+  Scanner s = new Scanner(System.in);
+    int employee_basic_salary = 0;
+    System.out.println("Enter the basic salary of employee");
+    employee_basic_salary = s.nextInt();
+    int gross;
+    if(employee_basic_salary<=10000) {
+     gross=employee_basic_salary+employee_basic_salary*67/100+employee_basic_salary*78/100;
+  System.out.println("Gross_Salary : " +gross);  
+    } else if (employee_basic_salary>10000 && employee_basic_salary<=20000) { 
+       gross=employee_basic_salary+employee_basic_salary*70/100+employee_basic_salary*80/100;
+       System.out.println("Gross_Salary : " +gross);  
+    } else {
+    gross=employee_basic_salary+employee_basic_salary*75/100+employee_basic_salary*85/100;
+  System.out.println("Gross_Salary : " +gross);
+  }
+  }
+}
+
+9. WAP to read units from user and find bill with gst.
+
+         for first 50 units, the charges are 0.50/unit
+         next 100 units, the charges are 0.75/unit
+         next 100 units, the charges are 1.25/unit
+         above 250 units, the charges are 2.30/unit.
+
+Example:
+               units= 40       40*0.50=> 20 rupees
+               units= 55       50*0.50+(5*0.75) ==>
+               units=170      (50*0.50)+ (100*0.75)+ (20*1.25)
+               units=500
+Answer:
+
+import java.util.Scanner;
+  class Current {
+    public static void main(String args[]){
+      Scanner s = new Scanner(System.in);
+      int units = 0;
+      System.out.println("Enter the no.of current units");
+      units = s.nextInt();
+      double total_cost;
+      if (units<=50){
+        total_cost = 0.50*units;
+        System.out.println("the current cost is" +total_cost);
+      } else if (units<=150) {
+          total_cost = ((0.50*50)+(units-50)*0.75);
+          System.out.println("the current cost is" +total_cost);
+      } else if (units<=250) {
+          total_cost = ((0.50*50)+(0.75*100)+(units-150)*1.25);
+          System.out.println("the current cost is" +total_cost);
+      } else {
+          total_cost = ((0.50*50)+(0.75*100)+(100*1.25)+(units-250)*2.30);
+          System.out.println("the current cost is" +total_cost);
+      }
+    }
+  }
+
+
+10. WAP to accept withdraw amount and print number of notes.
+
+                100 , 200, 500
+
+Answer:
+
+import java.util.Scanner;
+   class Atm {
+     public static void main(String args[]){
+       Scanner s = new Scanner(System.in);
+       int amount = 0;
+       System.out.println("Enter the amount to withdraw");
+       amount = s.nextInt();
+       int five=0,two=0,one=0;
+       if (amount%100==0){
+         if (amount>=500){
+          five = amount/500;
+          amount = amount - (five*500);
+         System.out.println("The no.of five hundred notes should be" +five); 
+         }
+         if (amount>=200) {
+           two = amount/200;
+           amount = amount - (two*200);
+           System.out.println("The no.of two hundred notes should be" +two);
+         }
+         if (amount>=100) {
+           one = amount/100;
+           amount = amount - (one*100);
+           System.out.println("The no.of one hundred notes should be" +one);
+         }
+      } else {
+         System.out.println("The amount entered cannot be withdrawn");
+      }
+     }
+   }
+
+
+11. WAP to read character and check it is lowercase letter or uppercase letter?
+
+ char ch=s.nextInt().charAt(0);  // to read character here Int should not be there char ch = s.next().charAt(0);
+
+Answer:
+
+import java.util.Scanner;
+  class Letter {
+    public static void main(String args[]){
+      Scanner s = new Scanner(System.in);
+      System.out.println("Enter the alphabet");
+      char ch=s.next().charAt(0); 
+      if (ch>='A' && ch<='Z') {
+        System.out.println("The entered alphabet is UPPER_CASE");
+      } else {
+          System.out.println("The entered alphabet is lower_case");
+      }
+    }
+  }
+
+
+
+
+
+
+13. WAP to reac character and check it is vowel or consonent?
+
+Answer:
+
+import java.util.Scanner;
+  class Vowel {
+    public static void main(String args[]){
+      Scanner s = new Scanner(System.in);
+      System.out.println("enter the letter from user");
+      char ch = s.next().charAt(0);
+      if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        System.out.println("Entered letter is Vowel");
+      } else {
+        System.out.println("Entered letter is Consonent");
+      }      
+    }
+  }
+
+14. WAP to read year and check it is leap year or not?
+
+Answer: 
+
+   import java.util.Scanner;
+  class Leap {
+    public static void main(String args[]){
+      Scanner s = new Scanner(System.in);
+      int i = 0;
+      System.out.println("Enter the number of year");
+      i = s.nextInt();
+     if ((i%4==0) && (i%100!=0) || (i%400==0)) {
+         System.out.println("Entered year is leap year");       
+      } else {
+        System.out.println("Entered year is not a leap year");
+      }
+    }
+  }
+
+Explanation: Leap Year contains 366 days, which comes once every four years. Every leap year corresponds to these facts : 
+
+A century year is a year ending with 00. A century year is a leap year only if it is divisible by 400.
+A leap year (except a century year) can be identified if it is exactly divisible by 4.
+A century year should be divisible by 4 and 100 both.
+A non-century year should be divisible only by 4.
